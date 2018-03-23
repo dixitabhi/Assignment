@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to remove zeroes of the array.</p>
+<button onclick="myFunction()">Remove Zeroes</button>
+<p id="one"></p>
+
+<script>
+function myFunction() {
+    var data = [0, 1, 2, 'stop', 2, 0, 1, 'stop'], i;
+    for (i=0; i<data.length; i++) {
+        if(data[i]==0){
+        delete data[i]}
+    }
+    document.getElementById("one").innerHTML = data;
+}
+</script>
+
+</body>
+</html>
